@@ -1,0 +1,5 @@
+module serd [system] {
+  header "/usr/local/include/serd-0/serd/serd.h"
+  link "serd-0"
+  export *
+}
