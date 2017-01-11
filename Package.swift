@@ -2,5 +2,8 @@ import PackageDescription
 
 let package = Package(
 	name: "serd",
-	pkgConfig: "serd-0"
+	pkgConfig: "serd-0",
+	providers: [
+		.Brew(name: "serd")
+	]
 )
