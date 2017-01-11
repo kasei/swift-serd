@@ -4,6 +4,7 @@ let package = Package(
 	name: "serd",
 	pkgConfig: "serd-0",
 	providers: [
-		.Brew("serd")
+		.Brew("serd"),
+		.Apt("libserd-dev")
 	]
 )
