@@ -1,19 +1,12 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.2
 import PackageDescription
 
 let package = Package(
-	name: "serd",
+	name: "Cserd",
 	products: [
 		.library(name: "serd", targets: ["serd"])
 	],
 	targets: [
-		.systemLibrary(
-			name: "serd",
-			pkgConfig: "serd-0",
-			providers: [
-				.brew(["serd"]),
-				.apt(["libserd-dev"])
-			]
-		)
+		.target(name: "serd")
 	]
 )

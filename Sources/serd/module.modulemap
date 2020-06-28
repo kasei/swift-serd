@@ -1,5 +1,0 @@
-module serd [system] {
-  header "serd.h"
-  link "serd-0"
-  export *
-}
